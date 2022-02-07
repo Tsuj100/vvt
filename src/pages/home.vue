@@ -1,10 +1,3 @@
-<script setup lang="ts">
-import { HomeOutlined, SettingOutlined, HeartOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons-vue";
-import { ref } from "vue";
-
-const selectedKeys = ref<string[]>(["1"]);
-const collapsed = ref<boolean>(false);
-</script>
 <template>
     <a-layout class="vvt-layout">
         <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
@@ -29,10 +22,33 @@ const collapsed = ref<boolean>(false);
                 <menu-unfold-outlined v-if="collapsed" class="trigger" @click="() => (collapsed = !collapsed)" />
                 <menu-fold-outlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
             </a-layout-header>
-            <a-layout-content :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }"> Content </a-layout-content>
+            <a-layout-content :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
+                Content
+            </a-layout-content>
         </a-layout>
     </a-layout>
 </template>
+<script lang="ts">
+import { HomeOutlined, SettingOutlined, HeartOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons-vue"
+import { defineComponent, ref } from "vue"
+export default defineComponent({
+    components: {
+        HomeOutlined,
+        SettingOutlined,
+        HeartOutlined,
+        MenuUnfoldOutlined,
+        MenuFoldOutlined
+    },
+    setup() {
+        const selectedKeys = ref<string[]>(["1"])
+        const collapsed = ref<boolean>(false)
+        return {
+            selectedKeys,
+            collapsed
+        }
+    }
+})
+</script>
 <style scoped>
 .vvt-layout {
     height: 100%;

@@ -1,10 +1,17 @@
-<script setup lang="ts">
-import Home from "./pages/home.vue";
-</script>
-
 <template>
     <Home></Home>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue"
+import Home from "./pages/home.vue"
+
+export default defineComponent({
+    components: {
+        Home
+    }
+})
+</script>
 
 <style>
 #app {
