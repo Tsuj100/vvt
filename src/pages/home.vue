@@ -29,8 +29,8 @@
     </a-layout>
 </template>
 <script lang="ts">
-import { HomeOutlined, SettingOutlined, HeartOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons-vue"
-import { defineComponent, ref } from "vue"
+import { HomeOutlined, SettingOutlined, HeartOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons-vue";
+import { defineComponent, ref } from "vue";
 export default defineComponent({
     components: {
         HomeOutlined,
@@ -40,14 +40,14 @@ export default defineComponent({
         MenuFoldOutlined
     },
     setup() {
-        const selectedKeys = ref<string[]>(["1"])
-        const collapsed = ref<boolean>(false)
+        const selectedKeys = ref<string[]>(["1"]);
+        const collapsed = ref<boolean>(false);
         return {
             selectedKeys,
             collapsed
-        }
+        };
     }
-})
+});
 </script>
 <style scoped>
 .vvt-layout {
