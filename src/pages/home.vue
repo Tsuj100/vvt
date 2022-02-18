@@ -5,7 +5,7 @@
             <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
                 <a-menu-item key="1">
                     <home-outlined />
-                    <span>Dashboard</span>
+                    <span>首页</span>
                 </a-menu-item>
                 <a-menu-item key="2">
                     <setting-outlined />

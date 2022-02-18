@@ -7,6 +7,8 @@ import Home from "./pages/home.vue";
 </script>
 
 <style>
+html,
+body,
 #app {
     margin: 0;
     padding: 0;
