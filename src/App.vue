@@ -6,7 +6,7 @@
 import Home from "./pages/home.vue";
 </script>
 
-<style>
+<style lang="less">
 html,
 body,
 #app {

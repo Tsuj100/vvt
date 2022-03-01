@@ -28,34 +28,34 @@
         </a-layout>
     </a-layout>
 </template>
+
 <script lang="ts" setup>
 import { HomeOutlined, SettingOutlined, HeartOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons-vue";
 import { ref } from "vue";
 const selectedKeys = ref<string[]>(["1"]);
 const collapsed = ref<boolean>(false);
 </script>
-<style scoped>
+
+<style lang="less" scoped>
 .vvt-layout {
     height: 100%;
-}
-.vvt-layout .trigger {
-    font-size: 18px;
-    line-height: 64px;
-    padding: 0 24px;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-.vvt-layout .trigger:hover {
-    color: #1890ff;
-}
-
-.vvt-layout .logo {
-    height: 32px;
-    background: rgba(255, 255, 255, 0.3);
-    margin: 16px;
-}
-
-.site-layout .site-layout-background {
-    background: #000;
+    .trigger {
+        font-size: 18px;
+        line-height: 64px;
+        padding: 0 24px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+    .trigger:hover {
+        color: #1890ff;
+    }
+    .logo {
+        height: 32px;
+        background: rgba(255, 255, 255, 0.3);
+        margin: 16px;
+    }
+    .site-layout-background {
+        background: #000;
+    }
 }
 </style>
