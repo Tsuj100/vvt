@@ -31,7 +31,7 @@
 
 <script lang="ts" setup>
 import { HomeOutlined, SettingOutlined, HeartOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons-vue";
-import { ref } from "vue";
+
 const selectedKeys = ref<string[]>(["1"]);
 const collapsed = ref<boolean>(false);
 </script>
