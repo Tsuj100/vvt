@@ -6,15 +6,15 @@ import { ElementPlusResolver, AntDesignVueResolver } from "unplugin-vue-componen
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "./",
-    plugins: [
-        vue(),
-        AutoImport({
-            imports: ["vue"],
-            dts: true
-        }),
-        Components({
-            resolvers: [ElementPlusResolver(), AntDesignVueResolver()]
-        })
-    ]
+  base: "./",
+  plugins: [
+    vue(),
+    AutoImport({
+      imports: ["vue"],
+      dts: true
+    }),
+    Components({
+      resolvers: [ElementPlusResolver(), AntDesignVueResolver()]
+    })
+  ]
 });
